@@ -9,3 +9,11 @@ lz4_flex = "0.11"
 [[bin]]
 name = "mytool"
 path = "src/main.rs"
+
+[lib]
+name = "csv_lz4_tool"
+path = "src/lib.rs"
+
+[[bin]]
+name = "chunk_tool"
+path = "src/bin/chunk_tool.rs"
