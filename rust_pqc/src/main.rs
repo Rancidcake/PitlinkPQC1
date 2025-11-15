@@ -1,6 +1,7 @@
 ﻿use std::path::PathBuf;
 use clap::{Parser, Subcommand};
 use anyhow::Result;
+use rust_pqc::{keygen, encrypt_file, decrypt_file, benchmark_session};
 
 #[derive(Parser)]
 #[command(author, version, about = "Rust PQC hybrid file encryptor (Kyber-768 + XChaCha20-Poly1305)")]
@@ -51,10 +52,10 @@ enum Commands {
 fn main() -> Result<()> {
     let cli = Cli::parse();
     match cli.command {
-        Commands::Keygen { outdir } => crate::keygen(outdir)?,
-        Commands::Encrypt { input, output, pubkey } => crate::encrypt_file(input, output, pubkey)?,
-        Commands::Decrypt { input, output, privkey } => crate::decrypt_file(input, output, privkey)?,
-        Commands::BenchmarkSession { pubkey, iterations, size } => crate::benchmark_session(pubkey, iterations, size)?,
+        Commands::Keygen { outdir } => keygen(outdir)?,
+        Commands::Encrypt { input, output, pubkey } => encrypt_file(input, output, pubkey)?,
+        Commands::Decrypt { input, output, privkey } => decrypt_file(input, output, privkey)?,
+        Commands::BenchmarkSession { pubkey, iterations, size } => benchmark_session(pubkey, iterations, size)?,
     }
     Ok(())
 }

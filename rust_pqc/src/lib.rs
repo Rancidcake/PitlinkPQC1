@@ -13,6 +13,7 @@ use getrandom;
 
 use common::{read_all, write_all, hkdf_derive, CHUNK_SIZE, MAGIC};
 
+/// Generate Kyber-768 keypair
 pub fn keygen(outdir: PathBuf) -> Result<()> {
     std::fs::create_dir_all(&outdir)?;
 
@@ -28,6 +29,7 @@ pub fn keygen(outdir: PathBuf) -> Result<()> {
     Ok(())
 }
 
+/// Encrypt a file using Kyber-768 + XChaCha20-Poly1305
 pub fn encrypt_file(input: PathBuf, output: PathBuf, pubkey_path: PathBuf) -> Result<()> {
     let start_instant = Instant::now();
     let start_ts = SystemTime::now().duration_since(UNIX_EPOCH).map_err(|e| anyhow::anyhow!("time error: {}", e))?.as_millis();
@@ -90,6 +92,7 @@ pub fn encrypt_file(input: PathBuf, output: PathBuf, pubkey_path: PathBuf) -> Re
     Ok(())
 }
 
+/// Decrypt a file using Kyber-768 + XChaCha20-Poly1305
 pub fn decrypt_file(input: PathBuf, output: PathBuf, privkey_path: PathBuf) -> Result<()> {
     let in_bytes = read_all(&input)?;
     let mut cursor = std::io::Cursor::new(&in_bytes);
@@ -142,6 +145,7 @@ pub fn decrypt_file(input: PathBuf, output: PathBuf, privkey_path: PathBuf) -> R
     Ok(())
 }
 
+/// Benchmark encryption/decryption session
 pub fn benchmark_session(pubkey_path: PathBuf, iterations: usize, size: usize) -> Result<()> {
     let pk_bytes = read_all(pubkey_path)?;
     let pk = kyber768::PublicKey::from_bytes(&pk_bytes).map_err(|e| anyhow::anyhow!("PublicKey from_bytes: {}", e))?;
