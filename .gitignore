@@ -1,0 +1,13 @@
+# Rust build artifacts
+/target/
+**/target/
+
+# Ignore local IDE/editor files
+.vscode/
+*.swp
+
+# Ignore Windows binaries accidentally committed
+/rustup-init.exe
+
+# Ignore cargo build snapshots and incremental
+**/Cargo.lock

@@ -18,6 +18,7 @@ tokio = { version = "1", features = ["fs", "io-util", "macros"] }
 pqcrypto-kyber = "0.8.1"
 pqcrypto-traits = "0.3"
 getrandom = "0.2"
+common = { path = "../common" }
 
 [profile.release]
 opt-level = 3

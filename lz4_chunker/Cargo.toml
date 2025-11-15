@@ -1,0 +1,11 @@
+[package]
+name = "lz4_chunker"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lz4_flex = "0.11"
+
+[[bin]]
+name = "lz4_chunker"
+path = "src/main.rs"

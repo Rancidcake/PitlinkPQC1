@@ -1,0 +1,7 @@
+[workspace]
+members = [
+  "rust_pqc",
+  "csv_lz4_tool",
+  "lz4_chunker",
+  "common",
+]
