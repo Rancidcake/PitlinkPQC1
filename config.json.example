@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "description": "PQC File Transfer System Configuration",
+  "encryption": {
+    "algorithm": "Kyber-768 + XChaCha20-Poly1305",
+    "chunkSizeMB": 1,
+    "keyRotationMonths": 12
+  },
+  "paths": {
+    "keysDir": "C:\\PQC_FileTransfer\\keys",
+    "stagingDir": "C:\\PQC_FileTransfer\\staging",
+    "encryptedDir": "C:\\PQC_FileTransfer\\encrypted",
+    "decryptedDir": "C:\\PQC_FileTransfer\\decrypted",
+    "logDir": "C:\\PQC_FileTransfer\\logs",
+    "binDir": "C:\\PQC_FileTransfer\\bin"
+  },
+  "performance": {
+    "maxParallelEncryptJobs": 4,
+    "maxParallelDecryptJobs": 4,
+    "bufferSizeKB": 64
+  },
+  "logging": {
+    "level": "info",
+    "enableConsole": true,
+    "enableFile": true,
+    "retentionDays": 30
+  },
+  "recipients": {
+    "alice": {
+      "name": "Alice Cooper",
+      "publicKeyPath": "C:\\PQC_FileTransfer\\keys\\alice\\kyber_public.key",
+      "enabled": true
+    },
+    "bob": {
+      "name": "Bob Smith",
+      "publicKeyPath": "C:\\PQC_FileTransfer\\keys\\bob\\kyber_public.key",
+      "enabled": true
+    }
+  },
+  "monitoring": {
+    "enableMetrics": true,
+    "metricsDir": "C:\\PQC_FileTransfer\\metrics",
+    "alertOnSlowEncrypt": true,
+    "slowEncryptThresholdMs": 1000
+  }
+}

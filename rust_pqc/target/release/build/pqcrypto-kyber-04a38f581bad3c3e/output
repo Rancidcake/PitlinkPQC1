@@ -1,0 +1,240 @@
+OUT_DIR = Some(C:\Users\KUSHAGRA\Desktop\trs\PitlinkPQC\rust_pqc\target\release\build\pqcrypto-kyber-04a38f581bad3c3e\out)
+OPT_LEVEL = Some(3)
+TARGET = Some(x86_64-pc-windows-msvc)
+CARGO_ENCODED_RUSTFLAGS = Some()
+cargo:rerun-if-env-changed=VCINSTALLDIR
+VCINSTALLDIR = None
+cargo:rerun-if-env-changed=VSTEL_MSBuildProjectFullPath
+VSTEL_MSBuildProjectFullPath = None
+cargo:rerun-if-env-changed=VCToolsVersion
+VCToolsVersion = None
+cargo:rerun-if-env-changed=VSCMD_ARG_VCVARS_SPECTRE
+VSCMD_ARG_VCVARS_SPECTRE = None
+cargo:rerun-if-env-changed=WindowsSdkDir
+WindowsSdkDir = None
+cargo:rerun-if-env-changed=WindowsSDKVersion
+WindowsSDKVersion = None
+cargo:rerun-if-env-changed=LIB
+LIB = None
+PATH = Some(C:\Users\KUSHAGRA\Desktop\trs\PitlinkPQC\rust_pqc\target\release\deps;C:\Users\KUSHAGRA\Desktop\trs\PitlinkPQC\rust_pqc\target\release;C:\Users\KUSHAGRA\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib\rustlib\x86_64-pc-windows-msvc\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\libnvvp;;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\emulator;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\tools;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\tools\bin;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\platform-tools;C:\Program Files (x86)\Java\jre1.8.0_421\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;;c:\Users\KUSHAGRA\AppData\Local\Programs\cursor\resources\app\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.3.0\;C:\Program Files\CMake\bin;C:\src\flutter\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\libnvvp;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\emulator;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\tools;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\tools\bin;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\platform-tools;C:\Program Files (x86)\Java\jre1.8.0_421\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;c:\Users\KUSHAGRA\AppData\Local\Programs\cursor\resources\app\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corpo;C:\Users\KUSHAGRA\AppData\Local\Programs\cursor\resources\app\bin;C:\intelFPGA\18.1\modelsim_ase\win32aloem;C:\Users\KUSHAGRA\miniconda3\miniconda\python.exe;C:\Users\KUSHAGRA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Windows\py.exe;C:\Program Files\CMake\bin;;c:\Users\KUSHAGRA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin)
+cargo:rerun-if-env-changed=INCLUDE
+INCLUDE = None
+HOST = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=CC_x86_64-pc-windows-msvc
+CC_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CC_x86_64_pc_windows_msvc
+CC_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some(cmpxchg16b,fxsr,sse,sse2,sse3)
+DEBUG = Some(false)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+cbd.c
+indcpa.c
+kem.c
+ntt.c
+poly.c
+polyvec.c
+reduce.c
+symmetric-shake.c
+verify.c
+pqclean\crypto_kem\kyber512\clean\verify.c(24): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+cargo:rerun-if-env-changed=AR_x86_64-pc-windows-msvc
+AR_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=AR_x86_64_pc_windows_msvc
+AR_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_pc_windows_msvc
+ARFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-pc-windows-msvc
+ARFLAGS_x86_64-pc-windows-msvc = None
+cargo:rustc-link-lib=static=kyber512_clean
+cargo:rustc-link-search=native=C:\Users\KUSHAGRA\Desktop\trs\PitlinkPQC\rust_pqc\target\release\build\pqcrypto-kyber-04a38f581bad3c3e\out
+OUT_DIR = Some(C:\Users\KUSHAGRA\Desktop\trs\PitlinkPQC\rust_pqc\target\release\build\pqcrypto-kyber-04a38f581bad3c3e\out)
+OPT_LEVEL = Some(3)
+TARGET = Some(x86_64-pc-windows-msvc)
+CARGO_ENCODED_RUSTFLAGS = Some()
+cargo:rerun-if-env-changed=VCINSTALLDIR
+VCINSTALLDIR = None
+cargo:rerun-if-env-changed=VSTEL_MSBuildProjectFullPath
+VSTEL_MSBuildProjectFullPath = None
+cargo:rerun-if-env-changed=VCToolsVersion
+VCToolsVersion = None
+cargo:rerun-if-env-changed=VSCMD_ARG_VCVARS_SPECTRE
+VSCMD_ARG_VCVARS_SPECTRE = None
+cargo:rerun-if-env-changed=WindowsSdkDir
+WindowsSdkDir = None
+cargo:rerun-if-env-changed=WindowsSDKVersion
+WindowsSDKVersion = None
+cargo:rerun-if-env-changed=LIB
+LIB = None
+PATH = Some(C:\Users\KUSHAGRA\Desktop\trs\PitlinkPQC\rust_pqc\target\release\deps;C:\Users\KUSHAGRA\Desktop\trs\PitlinkPQC\rust_pqc\target\release;C:\Users\KUSHAGRA\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib\rustlib\x86_64-pc-windows-msvc\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\libnvvp;;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\emulator;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\tools;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\tools\bin;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\platform-tools;C:\Program Files (x86)\Java\jre1.8.0_421\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;;c:\Users\KUSHAGRA\AppData\Local\Programs\cursor\resources\app\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.3.0\;C:\Program Files\CMake\bin;C:\src\flutter\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\libnvvp;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\emulator;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\tools;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\tools\bin;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\platform-tools;C:\Program Files (x86)\Java\jre1.8.0_421\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;c:\Users\KUSHAGRA\AppData\Local\Programs\cursor\resources\app\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corpo;C:\Users\KUSHAGRA\AppData\Local\Programs\cursor\resources\app\bin;C:\intelFPGA\18.1\modelsim_ase\win32aloem;C:\Users\KUSHAGRA\miniconda3\miniconda\python.exe;C:\Users\KUSHAGRA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Windows\py.exe;C:\Program Files\CMake\bin;;c:\Users\KUSHAGRA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin)
+cargo:rerun-if-env-changed=INCLUDE
+INCLUDE = None
+HOST = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=CC_x86_64-pc-windows-msvc
+CC_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CC_x86_64_pc_windows_msvc
+CC_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some(cmpxchg16b,fxsr,sse,sse2,sse3)
+DEBUG = Some(false)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+cbd.c
+kem.c
+indcpa.c
+ntt.c
+polyvec.c
+poly.c
+reduce.c
+verify.c
+symmetric-shake.c
+pqclean\crypto_kem\kyber768\clean\verify.c(24): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+cargo:rerun-if-env-changed=AR_x86_64-pc-windows-msvc
+AR_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=AR_x86_64_pc_windows_msvc
+AR_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_pc_windows_msvc
+ARFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-pc-windows-msvc
+ARFLAGS_x86_64-pc-windows-msvc = None
+cargo:rustc-link-lib=static=kyber768_clean
+cargo:rustc-link-search=native=C:\Users\KUSHAGRA\Desktop\trs\PitlinkPQC\rust_pqc\target\release\build\pqcrypto-kyber-04a38f581bad3c3e\out
+OUT_DIR = Some(C:\Users\KUSHAGRA\Desktop\trs\PitlinkPQC\rust_pqc\target\release\build\pqcrypto-kyber-04a38f581bad3c3e\out)
+OPT_LEVEL = Some(3)
+TARGET = Some(x86_64-pc-windows-msvc)
+CARGO_ENCODED_RUSTFLAGS = Some()
+cargo:rerun-if-env-changed=VCINSTALLDIR
+VCINSTALLDIR = None
+cargo:rerun-if-env-changed=VSTEL_MSBuildProjectFullPath
+VSTEL_MSBuildProjectFullPath = None
+cargo:rerun-if-env-changed=VCToolsVersion
+VCToolsVersion = None
+cargo:rerun-if-env-changed=VSCMD_ARG_VCVARS_SPECTRE
+VSCMD_ARG_VCVARS_SPECTRE = None
+cargo:rerun-if-env-changed=WindowsSdkDir
+WindowsSdkDir = None
+cargo:rerun-if-env-changed=WindowsSDKVersion
+WindowsSDKVersion = None
+cargo:rerun-if-env-changed=LIB
+LIB = None
+PATH = Some(C:\Users\KUSHAGRA\Desktop\trs\PitlinkPQC\rust_pqc\target\release\deps;C:\Users\KUSHAGRA\Desktop\trs\PitlinkPQC\rust_pqc\target\release;C:\Users\KUSHAGRA\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib\rustlib\x86_64-pc-windows-msvc\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\libnvvp;;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\emulator;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\tools;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\tools\bin;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\platform-tools;C:\Program Files (x86)\Java\jre1.8.0_421\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;;c:\Users\KUSHAGRA\AppData\Local\Programs\cursor\resources\app\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.3.0\;C:\Program Files\CMake\bin;C:\src\flutter\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\libnvvp;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\emulator;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\tools;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\tools\bin;C:\Users\KUSHAGRA\AppData\Local\Android\Sdk\platform-tools;C:\Program Files (x86)\Java\jre1.8.0_421\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;c:\Users\KUSHAGRA\AppData\Local\Programs\cursor\resources\app\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corpo;C:\Users\KUSHAGRA\AppData\Local\Programs\cursor\resources\app\bin;C:\intelFPGA\18.1\modelsim_ase\win32aloem;C:\Users\KUSHAGRA\miniconda3\miniconda\python.exe;C:\Users\KUSHAGRA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Windows\py.exe;C:\Program Files\CMake\bin;;c:\Users\KUSHAGRA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.cargo\bin;C:\Users\KUSHAGRA\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin)
+cargo:rerun-if-env-changed=INCLUDE
+INCLUDE = None
+HOST = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=CC_x86_64-pc-windows-msvc
+CC_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CC_x86_64_pc_windows_msvc
+CC_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some(cmpxchg16b,fxsr,sse,sse2,sse3)
+DEBUG = Some(false)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+cbd.c
+indcpa.c
+kem.c
+ntt.c
+poly.c
+polyvec.c
+reduce.c
+symmetric-shake.c
+verify.c
+pqclean\crypto_kem\kyber1024\clean\verify.c(24): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+exit code: 0
+cargo:rerun-if-env-changed=AR_x86_64-pc-windows-msvc
+AR_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=AR_x86_64_pc_windows_msvc
+AR_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_pc_windows_msvc
+ARFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-pc-windows-msvc
+ARFLAGS_x86_64-pc-windows-msvc = None
+cargo:rustc-link-lib=static=kyber1024_clean
+cargo:rustc-link-search=native=C:\Users\KUSHAGRA\Desktop\trs\PitlinkPQC\rust_pqc\target\release\build\pqcrypto-kyber-04a38f581bad3c3e\out

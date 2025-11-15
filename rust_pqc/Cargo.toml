@@ -1,0 +1,27 @@
+[package]
+name = "rust_pqc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.3", features = ["derive"] }
+rand = "0.8"
+anyhow = "1.0"
+sha2 = "0.10"
+hkdf = "0.12"
+base64 = "0.21"
+chacha20poly1305 = "0.10"
+tokio = { version = "1", features = ["fs", "io-util", "macros"] }
+
+# PQC KEM: choose an implementation available on crates.io. The example below uses
+# `pqcrypto-kyber` crate which provides Kyber implementations.
+pqcrypto-kyber = "0.8.1"
+pqcrypto-traits = "0.3"
+getrandom = "0.2"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+debug = false
