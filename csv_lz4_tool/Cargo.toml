@@ -1,0 +1,11 @@
+[package]
+name = "csv_lz4_tool"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lz4_flex = "0.11"
+
+[[bin]]
+name = "mytool"
+path = "src/main.rs"
