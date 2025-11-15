@@ -2,8 +2,6 @@ use std::error::Error;
 use std::fs::File;
 use std::io::{BufReader, BufWriter, Read, Write};
 
-const TARGET_CHUNK_SIZE: usize = 5 * 1024 * 1024; // 5 MB target
-
 #[derive(Clone, Debug)]
 pub struct CompressedChunkInfo {
     pub index: u64,
@@ -17,10 +15,24 @@ fn read_u32_le(data: &[u8]) -> u32 {
     u32::from_le_bytes([data[0], data[1], data[2], data[3]])
 }
 
+/// Calculate dynamic chunk size based on file size
+/// For files > 1GB, creates chunks of ~file_size/20
+/// For files 100MB-1GB, creates chunks of ~50MB
+/// For files < 100MB, creates 1 chunk
+fn calculate_chunk_size(file_size: usize) -> usize {
+    match file_size {
+        // Large files (> 1 GB): divide into ~20 chunks
+        size if size > 1_000_000_000 => size / 20,
+        // Medium files (100 MB - 1 GB): 50 MB chunks
+        size if size > 100_000_000 => 50 * 1024 * 1024,
+        // Small files (< 100 MB): 1 chunk
+        _ => file_size,
+    }
+}
+
 /// Chunk an LZ4 file with size-prepended blocks (compress_prepend_size format)
+/// Uses dynamic chunk sizing based on input file size
 pub fn chunk_lz4_file(input: &str, out_prefix: &str) -> Result<Vec<CompressedChunkInfo>, Box<dyn Error>> {
-    let start_time = std::time::Instant::now();
-    
     let input_file = File::open(input)?;
     let mut reader = BufReader::new(input_file);
     
@@ -30,6 +42,12 @@ pub fn chunk_lz4_file(input: &str, out_prefix: &str) -> Result<Vec<CompressedChu
     if all_data.is_empty() {
         return Err("File is empty".into());
     }
+    
+    let file_size = all_data.len();
+    let target_chunk_size = calculate_chunk_size(file_size);
+    
+    eprintln!("File size: {} MB", file_size / (1024 * 1024));
+    eprintln!("Dynamic chunk size: {} MB", target_chunk_size / (1024 * 1024));
     
     let mut chunks = Vec::new();
     let mut chunk_index = 1u64;
@@ -52,7 +70,7 @@ pub fn chunk_lz4_file(input: &str, out_prefix: &str) -> Result<Vec<CompressedChu
         offset += block_total;
         
         // Chunk if we've reached target size
-        if chunk_compressed >= TARGET_CHUNK_SIZE {
+        if chunk_compressed >= target_chunk_size {
             let out_file = format!("{}.{:04}.lz4", out_prefix, chunk_index);
             write_chunk_file(
                 &out_file,
@@ -90,9 +108,6 @@ pub fn chunk_lz4_file(input: &str, out_prefix: &str) -> Result<Vec<CompressedChu
             uncompressed_estimate: None,
         });
     }
-    
-    let elapsed = start_time.elapsed().as_millis();
-    eprintln!("Chunking completed: {} chunks in {}ms", chunks.len(), elapsed);
     
     Ok(chunks)
 }
